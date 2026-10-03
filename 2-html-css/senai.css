@@ -1,0 +1,33 @@
+body {
+    background-image:url(assets/fundo-pagina.jpg) ;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+h1 {
+    text-align: center;
+    color:rgb(3, 60, 139);
+    font-size: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+p {
+    text-align:right ;
+    color: rgb(90, 17, 17);
+    font-size: 70px;
+}
+
+button {
+    display: block;
+    margin: 67px auto;
+    background-color: darkblue;
+    border-radius: 70px;
+}
+
+a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}
