@@ -1,0 +1,14 @@
+let a = 10
+let b = 9
+let c
+
+ 
+if (a === b)
+    c = a + b
+else
+    c= a * b
+
+
+console.log(`A = ${a}`);
+console.log(`B = ${b}`);
+console.log(`C = ${c}`);
