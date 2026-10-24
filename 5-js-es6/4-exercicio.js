@@ -10,9 +10,10 @@ const listaDeAlunos = [
     listaDeAlunos.forEach(l => console.log(`${l.nome} tem ${l.nota} nota`))
     
     console.log('\nMostre a média geral da turma: ')
-    const mediaNotas = listaDeAlunos.reduce((total, aluno ) => total + aluno.nota,0)
-    const media = somaNotas / listaDeAlunos.length
-    console.log(`Média geral da turma: ${media}`)
+
+    const somaNota = listaDeAlunos.reduce((total, aluno) => total + aluno.nota, 0)
+    const media = somaNota / listaDeAlunos.length
+    onsole.log(`Média geral da turma: ${media}`)
 
 
     console.log('\nMostre o nome e nota dos alunos com nota abaixo de 7.0: ')
