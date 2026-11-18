@@ -1,0 +1,27 @@
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: auto;
+  min-height: 82px;
+  padding: 22px clamp(24px, 6vw, 72px);
+  color: rgba(255, 255, 255, 0.78);
+  background: var(--senai-navy);
+  border-top: 4px solid var(--senai-red);
+  font-size: 0.92rem;
+}
+
+footer p:last-child {
+  color: #fff;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+}
+
+@media (max-width: 600px) {
+  footer {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+}

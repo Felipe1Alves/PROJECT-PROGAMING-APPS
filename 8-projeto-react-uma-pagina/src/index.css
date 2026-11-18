@@ -1,0 +1,81 @@
+:root {
+  --senai-red: #e31b23;
+  --senai-red-dark: #b51219;
+  --senai-navy: #151d2d;
+  --senai-blue: #264a73;
+  --text: #445064;
+  --text-dark: #1b2433;
+  --surface: #ffffff;
+  --surface-soft: #f4f6f8;
+  --border: #dde3e9;
+  --shadow-sm: 0 8px 24px rgba(21, 29, 45, 0.08);
+  --shadow-lg: 0 24px 60px rgba(21, 29, 45, 0.16);
+  --sans: Inter, "Segoe UI", Arial, sans-serif;
+  --heading: "Segoe UI", Inter, Arial, sans-serif;
+
+  font-family: var(--sans);
+  color: var(--text);
+  background: var(--surface-soft);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+  background:
+    radial-gradient(circle at 10% 15%, rgba(227, 27, 35, 0.055), transparent 24rem),
+    linear-gradient(135deg, #f9fafb 0%, #edf1f4 100%);
+}
+
+body,
+button,
+input,
+textarea,
+select {
+  font-family: var(--sans);
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--heading);
+  color: var(--text-dark);
+}
+
+p {
+  margin: 0;
+}
+
+::selection {
+  color: #ffffff;
+  background: var(--senai-red);
+}
+
+:focus-visible {
+  outline: 3px solid rgba(227, 27, 35, 0.35);
+  outline-offset: 3px;
+}
