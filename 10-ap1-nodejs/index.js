@@ -24,7 +24,7 @@ api.use(express.json())
 const port = 5000
 
 // Cadastrar um novo cliente.
-api.post('cliente', async (req, res) =>{
+api.post('/clientes', async (req, res) =>{
     try {
         const {nome, email, telefone } = req.body
         const novoCliente = await Cliente.create({nome, email, telefone})
@@ -56,6 +56,6 @@ sequelize.sync().then(() => {
         console.log('Banco de dados conectado. ')
     })
 }).catch(erro => {
-    console.log('Erro ao conectar ao banco de dados.')
-    console.log('Encrontre o erro aqui:', erro)
+    console.log('Erro ao conectar ao banco de dados...')
+    console.log('Encrontre o erro aqui: \n', erro)
 })
